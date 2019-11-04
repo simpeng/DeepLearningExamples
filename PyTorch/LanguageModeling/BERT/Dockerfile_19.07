@@ -50,8 +50,8 @@ COPY . .
 
 # download py 
 
-RUN git clone https://github.com/simpeng/DeepLearningExamples.git
-RUN cd DeepLearningExamples && git checkout pengwa/pt_nv_19.07
+RUN git clone https://github.com/NVIDIA/DeepLearningExamples.git
+RUN cd DeepLearningExamples #&& git checkout pengwa/pt_nv_19.07
 RUN cp DeepLearningExamples/PyTorch/LanguageModeling/BERT/* /workspace/bert -r
 
 RUN chmod 777 /workspace/bert/ -R
